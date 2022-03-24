@@ -42,25 +42,54 @@ replace it with the proper embed-code.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [The problem](#the-problem)
+- [This solution](#this-solution)
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported services](#supported-services)
   - [CodePen](#codepen)
+    - [Usage](#usage-1)
   - [CodeSandbox](#codesandbox)
+    - [Usage](#usage-2)
   - [GIPHY](#giphy)
+    - [Usage](#usage-3)
   - [Instagram](#instagram)
+    - [Usage](#usage-4)
+    - [Options](#options)
+      - [accessToken](#accesstoken)
   - [Lichess](#lichess)
+    - [Usage](#usage-5)
   - [Pinterest](#pinterest)
+    - [Usage](#usage-6)
   - [Slides](#slides)
+    - [Usage](#usage-7)
   - [SoundCloud](#soundcloud)
+    - [Usage](#usage-8)
   - [Spotify](#spotify)
+    - [Usage](#usage-9)
   - [Streamable](#streamable)
+    - [Usage](#usage-10)
   - [Testing Playground](#testing-playground)
+    - [Usage](#usage-11)
   - [Twitch](#twitch)
+    - [Usage](#usage-12)
+    - [Options](#options-1)
+      - [parent](#parent)
+        - [Netlify](#netlify)
+        - [Vercel](#vercel)
   - [Twitter](#twitter)
+    - [Usage](#usage-13)
   - [YouTube](#youtube)
-- [Options](#options)
+    - [Usage](#usage-14)
+    - [Options](#options-2)
+- [Options](#options-3)
   - [customTransformers](#customtransformers)
+    - [Properties](#properties)
+      - [`getHTML(url, options)`](#gethtmlurl-options)
+      - [`name`](#name)
+      - [`shouldTransform(url)`](#shouldtransformurl)
+    - [Example transformer](#example-transformer)
   - [services](#services)
 - [Inspiration](#inspiration)
 - [Issues](#issues)
@@ -766,6 +795,15 @@ https://youtu.be/dQw4w9WgXcQ
 ```
 
 </details>
+
+#### Options
+
+All options should go under the `YouTube` namespace.
+
+| name   | Type     | Required | Default | Description                  |
+| :----- | :------- | :------- | :------ | :--------------------------- |
+| height | `string` | ❌       | 100%    | Height of the YouTube iframe |
+| width  | `string` | ❌       | 315     | Width of the YouTube iframe  |
 
 ## Options
 
